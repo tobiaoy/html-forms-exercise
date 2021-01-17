@@ -1,0 +1,88 @@
+/* External CSS for Page 2 */
+
+.poem {
+
+	font-style: italic;
+}
+
+.synopsis{
+	font-size: .6em;
+	text-indent: 45px;
+}
+
+table {
+	width: 780;
+}
+
+table thead td{
+	width: 260;
+	border: 0px;
+	text-align: center;
+}
+
+body {
+  background-image: url("https://unblast.com/wp-content/uploads/2018/08/Gradient-Mesh-27.jpg");
+  background-repeat: repeat-y;
+}
+
+h2 {
+	color: white;
+	font-family: monospace;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: lightblue;
+  font-size: 16px;
+}
+
+select {
+	width: 80%;
+    padding: 12px 20px;
+    margin: 8px 5px;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+	text-align: center;
+}
+
+input [type = button] {
+	background-color: lightblue;
+}
+
+
+.button {
+
+  background-color: #008CBA;
+  border: none;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer
+  border-radius: 5px;
+  transition-duration: 0.3s;
+  width: 60%;
+
+  }
+
+  .button:hover {
+  background-color: lightblue;
+  color: black;
+  border: 2px solid #008CBA;
+  border-radius: 5px;
+  }

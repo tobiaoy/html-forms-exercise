@@ -1,0 +1,253 @@
+<html xmlns = ″http://www.w3.org/1999/xhtml″>
+
+<head>
+<title>Page 2</title>
+<link rel = "stylesheet" type = "text/css" href = "Page2.css" />
+<script language = "JavaScript">
+    
+    /** Input Text  **/
+    function textPost()
+    { 
+        var itext = document.getElementById("IT").value;
+        alert("You entered: " + itext);
+    }
+    
+    /** Check Boxes  **/
+    function checkPost(str){
+    
+    var checks = document.getElementById("artPref")
+    if(checks.checked == true){
+        alert("You seem to like: " + str)
+    }
+    
+}
+    
+    /** Radio Buttons  **/
+    function genrePost(genre){
+          switch (genre) {
+    case 1: 
+      alert("A genre rife with laughs");
+      break;
+    case 2: 
+      alert("Tears fill up the theatre with this center-stage");
+      break; 
+    case 3:
+      alert("What's terrifying is the cold");
+      break;    
+    case 4:
+      alert("A highstakes ethos with violent scenes");
+      break; 
+    default:
+      alert("Error in JavaScript function genrePost");
+      break;
+    }
+    }
+
+    /** Drop Down List  **/
+      function idPost (frm)
+  {
+    var idValue ;
+    var newCityText ;
+    
+    idValue = frm.idnums.options [frm.idnums.selectedIndex].value ;
+    idText = frm.idnums.options [frm.idnums.selectedIndex].text ;
+    
+    alert (idValue) ;
+    alert (idText) ;
+    }
+
+    /** Submit Button **/
+       function simulateSubmit (frm)
+    {
+        var hid 
+        hid = frm.Oyero.value ;
+        alert(hid)
+        
+    }
+    
+    </script>
+</head>
+
+<body>
+<p><h2>Page 2's Amazing Title</h2></p>
+
+<form id = "bookinfo" method = "post" action = "">
+<table id = "T" border = "1px">
+
+<p>
+<input type = "hidden" name = "Oyero" 
+    value = "Oyero" />
+</p>
+
+<tr>
+<td><textarea id = "IT"
+              onchange = "textPost()"
+              ></textarea></td>
+
+<td>
+
+
+
+<select id = "idnums"
+        name = "idnums"
+        onchange = "idPost(this.form)">
+  <option value="2">Two</option>
+  <option value="1">One</option>
+  <option value="5">Five</option>
+  <option value="9">Nine</option>
+</select>
+    
+</td>
+
+<td rowspan = "2" colspan = "2">
+<img name = "mountain" 
+     src = "https://alpineairadventures.com/wp-content/uploads/2017/05/sulphur-mountain-ridge_LI-1-200x200.jpg"
+     alt = "picture of a mountain" />
+<p>
+  <strong>Sulphur Mountain</strong></p>
+
+</td>
+
+</tr>
+
+<tr>
+<td>
+<p class = "synopsis">
+<em>Cloud Atlas</em> by David Mitchell is a bestselling novel that<br /> presents an anthology
+of seemingly unconnected sub-stories.
+</p>
+</td>
+
+<td>
+<p class = "poem">
+  The line between truth and fiction <br/>
+  The hearts of men obscure <br/>
+  We cling to reality impure and <br/>
+  Hide our lies in impressive diction
+</p>
+</td>
+ 
+</tr>
+
+<tr>
+<td rowspan = "2">
+
+         <p>
+            <strong>Which of these art forms do you prefer?</strong><br />
+
+            <label>Prose
+            <input id = "artPref" type = "checkbox" 
+               value = "Prose" onclick = checkPost("Prose") /></label>
+       
+            <label>Poetry
+            <input id = "artPref" type = "checkbox" 
+               value = "Poetry" onclick = checkPost("Poetry") /></label>
+               
+            <label>Television
+            <input id = "artPref" type = "checkbox" 
+               value = "Television" onclick = checkPost("Television") /></label>
+
+            <label>Film
+            <input id = "artPref" type = "checkbox" 
+               value = "Film" onclick = checkPost("Film") /></label>
+         </p>
+
+</td>
+
+<td rowspan = "2">
+
+            <strong>Which of these genres do you prefer?</strong><br />
+            
+               <input type = "radio" name = "genrePref" 
+                  value = "comedy" 
+                  onclick = "genrePost(1)" />Comedy <br/>
+              
+               <input type = "radio" name = "genrePref" 
+                  value = "tragedy" 
+                  onclick = "genrePost(2)" />Tragedy <br/>
+
+               <input type = "radio" name = "genrePref"
+                  value = "thriller"
+                  onclick = "genrePost(3)" />Thriller <br/>
+            
+               <input type = "radio" name = "genrePref" 
+                  value = "action" 
+                  onclick = "genrePost(4)" />Action
+
+
+</td>
+
+<td colspan = "2">
+    
+    <img name = "city"
+         src = "https://www.eco-business.com/media/cache/d5/34/d534b0eaa20487934d1bc2e1b7d86afe.jpg"
+         height = "100"
+         width = "200"
+         alt = "picture of a city" />
+    
+    </td>
+    
+    </tr>
+    
+    <tr>
+        <td>
+            
+            <img name = "village"
+         src = "https://www.planetware.com/photos-large/F/france-alsace-villages-turckheim.jpg"
+         height = "100"
+         width = "200"
+         alt = "picture of a village" />
+            
+        </td>
+    </tr>
+    
+    <tr>
+   
+    <td colspan = "1">
+        <p>Oyero Oluwatobi</p>
+    </td>
+        
+    <td colspan = "2">
+        <p>Cloud Atlas</p>
+    </td>
+    </tr>
+    
+    <table border = "1">
+    <thead>
+        <tr>
+            <td>
+    <input type = "submit"
+           value = "Submit"
+           class = "button"
+           onclick = "simulateSubmit(this.form)">
+            </td>
+            
+             <td>
+    <input type = "button"
+           value = "Button 2"
+           class = "button">
+             </td>
+            
+              <td>
+    <input type = "button" 
+           value = "Button 3"
+           class = "button">
+              </td>
+        </tr>
+    </thead>
+  </table>
+    
+</table>
+
+
+
+</form>
+
+
+
+
+
+
+
+</body>
+</html>

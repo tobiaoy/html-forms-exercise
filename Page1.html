@@ -1,0 +1,68 @@
+<html xmlns = ″http://www.w3.org/1999/xhtml″>
+
+<head>
+<title>Page 1</title>
+<link rel = "stylesheet" type = "text/css" href = "Page1.css" />
+<script language = "JavaScript">
+    
+    function simulateSubmit (frm)
+    {
+        var hid 
+        
+        hid = frm.Oluwatobi.value ;
+        
+        alert(hid)
+        
+    }
+    
+    </script>
+    
+</head>
+
+<body>
+    <p><h3>Page 1's Amazing Title</h3></p>
+    
+<form name = userpass method = "get" action = "">
+
+<p>
+<input type = "hidden" name = "Oluwatobi" 
+    value = "Oluwatobi" />
+</p>
+
+
+<table>
+<tr>
+    <td><label>User Id:</td>
+    <td><input name = "userid" type = "text" size = "30" /></td>
+</label>
+</tr>
+
+<tr>
+    <td><label>Password:</td>
+    <td><input name = "password"  type = "password"  size = "30" /></td>
+</label>
+</tr>
+
+</table>
+
+<p>
+
+<input type = "submit"  value = "Submit"
+    class = "button" 
+    onclick = simulateSubmit(userpass)   />
+
+<input type = "button"
+    class = "button"
+    value = "Help" />
+
+</p>
+
+</form>
+
+
+</body>
+
+
+
+
+</html>
