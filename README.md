@@ -1,14 +1,14 @@
 # html-forms-exercise
 An assignment made for a web development course.
-#
-##Role of each file
+
+## Role of each file
 Page1.html contains the HTML code and JavaScript for the first page
 Page2.html contains the HTML code and JavaScript for the second page
 Page1.css contains CSS styling for the first page
 Page2.css contains CSS styling for the second page
 01ReadMe.txt contains documentation for the other files
 
-##Customization done
+## Customization done
 Page 1
 buttons - The buttons  on this page have been changed to a blue color with rounded edges. 
           I've also included a hover attribute that  changes the color to white when hovering over them.
@@ -49,13 +49,13 @@ buttons - the buttons have been changed to a dark blue color
           a hover attribute has been added that changes the button color to light blue and adds a dark blue border
           
           
-##Role of JavaScript
-###Page 1
+## Role of JavaScript
+### Page 1
 simulateSubmit(frm) - the submit button triggers an alert that shows the hidden field 
 
-###Page 2
+### Page 2
 textPost - the text within the text area is shown as an alert after the text is changed
 checkPost(str) - upon clicking a selection in the check list an alert will appear saying "You seem to like: " + the string entered
 genrePost(genre) - upon clicking a selection among the radio buttons, a short description of the genre will appear via an alert
-idPost(frm) - upon changing a choice on the drop down list, two successive alerts will appear displaying the value and text of the                   choice
+idPost(frm) - upon changing a choice on the drop down list, two successive alerts will appear displaying the value and text of the choice
 simulateSubmit(frm) - the submit button triggers an alert that shows the hidden field
